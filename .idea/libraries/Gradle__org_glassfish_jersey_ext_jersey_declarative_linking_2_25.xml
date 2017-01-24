@@ -1,0 +1,11 @@
+<component name="libraryTable">
+  <library name="Gradle: org.glassfish.jersey.ext:jersey-declarative-linking:2.25">
+    <CLASSES>
+      <root url="jar://$USER_HOME$/.gradle/caches/modules-2/files-2.1/org.glassfish.jersey.ext/jersey-declarative-linking/2.25/9ae3fc07d48b5d1b48d32052a1a738a752398cc7/jersey-declarative-linking-2.25.jar!/" />
+    </CLASSES>
+    <JAVADOC />
+    <SOURCES>
+      <root url="jar://$USER_HOME$/.gradle/caches/modules-2/files-2.1/org.glassfish.jersey.ext/jersey-declarative-linking/2.25/d85ac2df1a95827ad26efae35f6016f0aa04fc81/jersey-declarative-linking-2.25-sources.jar!/" />
+    </SOURCES>
+  </library>
+</component>
