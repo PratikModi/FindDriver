@@ -1,7 +1,7 @@
-package com.gojeck.validation;
+package com.gojek.validation;
 
-import com.gojeck.api.Driver;
-import com.gojeck.util.LocationUtil;
+import com.gojek.api.Driver;
+import com.gojek.util.LocationUtil;
 import org.slf4j.Logger;
 import org.slf4j.LoggerFactory;
 
@@ -16,11 +16,8 @@ public class DriverValidator implements Validator<Driver> {
 
     @Override
     public boolean validate(Driver driver) {
-        log.info("Validating Driver:-"+driver);
-       /* if(driver.getId()<1 || driver.getId()>50000){
-            violationMessage.append("Not Found. Invalid Driver ID.\n");
-            return false;
-        }else */if(!isValidLatitude(driver.getLatitude())){
+       log.info("Validating Driver:-"+driver);
+       if(!isValidLatitude(driver.getLatitude())){
             return false;
         }else if(!isValidLongitude(driver.getLongitude())){
             return false;

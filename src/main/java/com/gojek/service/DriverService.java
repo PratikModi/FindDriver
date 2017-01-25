@@ -1,7 +1,7 @@
-package com.gojeck.service;
+package com.gojek.service;
 
-import com.gojeck.api.Driver;
-import com.gojeck.api.Location;
+import com.gojek.api.Driver;
+import com.gojek.api.Location;
 
 import java.util.NavigableSet;
 
@@ -12,6 +12,6 @@ public interface DriverService {
 
     NavigableSet<Driver> getDriversLocation(Location location);
 
-    void saveDriverLocation(Driver driver);
+    void saveDriversLocation(Driver driver);
 
 }

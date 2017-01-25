@@ -1,4 +1,4 @@
-package com.gojeck.response;
+package com.gojek.response;
 
 /**
  * Created by Pratik on 23-01-2017.

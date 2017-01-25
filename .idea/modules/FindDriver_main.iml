@@ -11,11 +11,10 @@
     <orderEntry type="sourceFolder" forTests="false" />
     <orderEntry type="library" name="Gradle: io.dropwizard:dropwizard-core:1.0.5" level="project" />
     <orderEntry type="library" name="Gradle: io.dropwizard:dropwizard-assets:1.0.5" level="project" />
-    <orderEntry type="library" name="Gradle: com.sun.jersey:jersey-client:1.19.3" level="project" />
-    <orderEntry type="library" name="Gradle: com.sun.jersey:jersey-core:1.19.3" level="project" />
-    <orderEntry type="library" name="Gradle: com.sun.jersey:jersey-json:1.19.3" level="project" />
+    <orderEntry type="library" name="Gradle: org.glassfish.jersey.ext:jersey-declarative-linking:2.25" level="project" />
     <orderEntry type="library" name="Gradle: com.smoketurner:dropwizard-swagger:1.0.5-4" level="project" />
     <orderEntry type="library" name="Gradle: com.google.inject:guice:4.1.0" level="project" />
+    <orderEntry type="library" name="Gradle: com.restfuse:com.eclipsesource.restfuse:1.2.0" level="project" />
     <orderEntry type="library" name="Gradle: io.dropwizard:dropwizard-util:1.0.5" level="project" />
     <orderEntry type="library" name="Gradle: io.dropwizard:dropwizard-jackson:1.0.5" level="project" />
     <orderEntry type="library" name="Gradle: io.dropwizard:dropwizard-validation:1.0.5" level="project" />
@@ -33,13 +32,8 @@
     <orderEntry type="library" name="Gradle: io.dropwizard:dropwizard-request-logging:1.0.5" level="project" />
     <orderEntry type="library" name="Gradle: net.sourceforge.argparse4j:argparse4j:0.7.0" level="project" />
     <orderEntry type="library" name="Gradle: org.eclipse.jetty.toolchain.setuid:jetty-setuid-java:1.0.3" level="project" />
-    <orderEntry type="library" name="Gradle: javax.ws.rs:jsr311-api:1.1.1" level="project" />
-    <orderEntry type="library" name="Gradle: org.codehaus.jettison:jettison:1.1" level="project" />
-    <orderEntry type="library" name="Gradle: com.sun.xml.bind:jaxb-impl:2.2.3-1" level="project" />
-    <orderEntry type="library" name="Gradle: org.codehaus.jackson:jackson-core-asl:1.9.2" level="project" />
-    <orderEntry type="library" name="Gradle: org.codehaus.jackson:jackson-mapper-asl:1.9.2" level="project" />
-    <orderEntry type="library" name="Gradle: org.codehaus.jackson:jackson-jaxrs:1.9.2" level="project" />
-    <orderEntry type="library" name="Gradle: org.codehaus.jackson:jackson-xc:1.9.2" level="project" />
+    <orderEntry type="library" name="Gradle: org.glassfish.jersey.core:jersey-common:2.25" level="project" />
+    <orderEntry type="library" name="Gradle: org.glassfish.jersey.core:jersey-server:2.25" level="project" />
     <orderEntry type="library" name="Gradle: io.dropwizard:dropwizard-auth:1.0.5" level="project" />
     <orderEntry type="library" name="Gradle: io.dropwizard:dropwizard-views:1.0.5" level="project" />
     <orderEntry type="library" name="Gradle: io.dropwizard:dropwizard-views-freemarker:1.0.5" level="project" />
@@ -48,6 +42,7 @@
     <orderEntry type="library" name="Gradle: javax.inject:javax.inject:1" level="project" />
     <orderEntry type="library" name="Gradle: aopalliance:aopalliance:1.0" level="project" />
     <orderEntry type="library" name="Gradle: com.google.guava:guava:19.0" level="project" />
+    <orderEntry type="library" name="Gradle: junit:junit:4.8.2" level="project" />
     <orderEntry type="library" name="Gradle: com.google.code.findbugs:jsr305:3.0.1" level="project" />
     <orderEntry type="library" name="Gradle: joda-time:joda-time:2.9.4" level="project" />
     <orderEntry type="library" name="Gradle: com.fasterxml.jackson.datatype:jackson-datatype-guava:2.7.8" level="project" />
@@ -65,61 +60,56 @@
     <orderEntry type="library" name="Gradle: ch.qos.logback:logback-core:1.1.7" level="project" />
     <orderEntry type="library" name="Gradle: org.slf4j:log4j-over-slf4j:1.7.21" level="project" />
     <orderEntry type="library" name="Gradle: org.slf4j:jcl-over-slf4j:1.7.21" level="project" />
-    <orderEntry type="library" name="Gradle: org.eclipse.jetty:jetty-util:9.3.9.v20160517" level="project" />
-    <orderEntry type="library" name="Gradle: org.glassfish.jersey.core:jersey-server:2.23.2" level="project" />
     <orderEntry type="library" name="Gradle: org.glassfish.jersey.ext:jersey-metainf-services:2.23.2" level="project" />
     <orderEntry type="library" name="Gradle: org.glassfish.jersey.ext:jersey-bean-validation:2.23.2" level="project" />
     <orderEntry type="library" name="Gradle: io.dropwizard.metrics:metrics-jersey2:3.1.2" level="project" />
     <orderEntry type="library" name="Gradle: com.fasterxml.jackson.jaxrs:jackson-jaxrs-json-provider:2.7.8" level="project" />
     <orderEntry type="library" name="Gradle: org.glassfish.jersey.containers:jersey-container-servlet:2.23.2" level="project" />
-    <orderEntry type="library" name="Gradle: org.eclipse.jetty:jetty-server:9.3.9.v20160517" level="project" />
     <orderEntry type="library" name="Gradle: org.eclipse.jetty:jetty-webapp:9.3.9.v20160517" level="project" />
-    <orderEntry type="library" name="Gradle: org.eclipse.jetty:jetty-continuation:9.3.9.v20160517" level="project" />
     <orderEntry type="library" name="Gradle: io.dropwizard.metrics:metrics-annotation:3.1.2" level="project" />
     <orderEntry type="library" name="Gradle: io.dropwizard.metrics:metrics-jetty9:3.1.2" level="project" />
-    <orderEntry type="library" name="Gradle: org.eclipse.jetty:jetty-servlet:9.3.9.v20160517" level="project" />
     <orderEntry type="library" name="Gradle: org.eclipse.jetty:jetty-servlets:9.3.9.v20160517" level="project" />
-    <orderEntry type="library" name="Gradle: org.eclipse.jetty:jetty-http:9.3.9.v20160517" level="project" />
     <orderEntry type="library" name="Gradle: io.dropwizard.metrics:metrics-json:3.1.2" level="project" />
     <orderEntry type="library" name="Gradle: ch.qos.logback:logback-access:1.1.7" level="project" />
-    <orderEntry type="library" name="Gradle: javax.xml.bind:jaxb-api:2.2.2" level="project" />
+    <orderEntry type="library" name="Gradle: javax.ws.rs:javax.ws.rs-api:2.0.1" level="project" />
+    <orderEntry type="library" name="Gradle: javax.annotation:javax.annotation-api:1.2" level="project" />
+    <orderEntry type="library" name="Gradle: org.glassfish.jersey.bundles.repackaged:jersey-guava:2.25" level="project" />
+    <orderEntry type="library" name="Gradle: org.glassfish.hk2:hk2-api:2.5.0-b30" level="project" />
+    <orderEntry type="library" name="Gradle: org.glassfish.hk2.external:javax.inject:2.5.0-b30" level="project" />
+    <orderEntry type="library" name="Gradle: org.glassfish.hk2:hk2-locator:2.5.0-b30" level="project" />
+    <orderEntry type="library" name="Gradle: org.glassfish.hk2:osgi-resource-locator:1.0.1" level="project" />
     <orderEntry type="library" name="Gradle: org.freemarker:freemarker:2.3.23" level="project" />
-    <orderEntry type="library" name="Gradle: org.glassfish.jersey.core:jersey-common:2.23.2" level="project" />
     <orderEntry type="library" name="Gradle: org.jvnet.mimepull:mimepull:1.9.6" level="project" />
     <orderEntry type="library" name="Gradle: io.swagger:swagger-jaxrs:1.5.12" level="project" />
     <orderEntry type="library" name="Gradle: javax.validation:validation-api:1.1.0.Final" level="project" />
     <orderEntry type="library" name="Gradle: org.jboss.logging:jboss-logging:3.2.1.Final" level="project" />
     <orderEntry type="library" name="Gradle: com.fasterxml:classmate:1.1.0" level="project" />
     <orderEntry type="library" name="Gradle: org.yaml:snakeyaml:1.15" level="project" />
-    <orderEntry type="library" name="Gradle: org.glassfish.jersey.core:jersey-client:2.23.2" level="project" />
-    <orderEntry type="library" name="Gradle: javax.ws.rs:javax.ws.rs-api:2.0.1" level="project" />
-    <orderEntry type="library" name="Gradle: org.glassfish.jersey.media:jersey-media-jaxb:2.23.2" level="project" />
-    <orderEntry type="library" name="Gradle: javax.annotation:javax.annotation-api:1.2" level="project" />
-    <orderEntry type="library" name="Gradle: org.glassfish.hk2:hk2-api:2.5.0-b05" level="project" />
-    <orderEntry type="library" name="Gradle: org.glassfish.hk2.external:javax.inject:2.5.0-b05" level="project" />
-    <orderEntry type="library" name="Gradle: org.glassfish.hk2:hk2-locator:2.5.0-b05" level="project" />
     <orderEntry type="library" name="Gradle: com.fasterxml.jackson.jaxrs:jackson-jaxrs-base:2.7.8" level="project" />
     <orderEntry type="library" name="Gradle: com.fasterxml.jackson.module:jackson-module-jaxb-annotations:2.7.8" level="project" />
-    <orderEntry type="library" name="Gradle: javax.servlet:javax.servlet-api:3.1.0" level="project" />
-    <orderEntry type="library" name="Gradle: org.eclipse.jetty:jetty-io:9.3.9.v20160517" level="project" />
     <orderEntry type="library" name="Gradle: org.eclipse.jetty:jetty-xml:9.3.9.v20160517" level="project" />
-    <orderEntry type="library" name="Gradle: org.eclipse.jetty:jetty-security:9.3.9.v20160517" level="project" />
-    <orderEntry type="library" name="Gradle: javax.xml.stream:stax-api:1.0-2" level="project" />
-    <orderEntry type="library" name="Gradle: javax.activation:activation:1.1" level="project" />
-    <orderEntry type="library" name="Gradle: org.glassfish.jersey.bundles.repackaged:jersey-guava:2.23.2" level="project" />
-    <orderEntry type="library" name="Gradle: org.glassfish.hk2:osgi-resource-locator:1.0.1" level="project" />
     <orderEntry type="library" name="Gradle: io.swagger:swagger-core:1.5.12" level="project" />
     <orderEntry type="library" name="Gradle: org.reflections:reflections:0.9.10" level="project" />
-    <orderEntry type="library" name="Gradle: org.glassfish.hk2:hk2-utils:2.5.0-b05" level="project" />
-    <orderEntry type="library" name="Gradle: org.glassfish.hk2.external:aopalliance-repackaged:2.5.0-b05" level="project" />
-    <orderEntry type="library" name="Gradle: org.javassist:javassist:3.20.0-GA" level="project" />
     <orderEntry type="library" name="Gradle: io.swagger:swagger-models:1.5.12" level="project" />
     <orderEntry type="library" name="Gradle: com.google.code.findbugs:annotations:2.0.1" level="project" />
     <orderEntry type="library" name="Gradle: io.swagger:swagger-annotations:1.5.12" level="project" />
+    <orderEntry type="library" name="Gradle: org.eclipse.jetty:jetty-util:9.3.9.v20160517" level="project" />
+    <orderEntry type="library" name="Gradle: org.glassfish.jersey.core:jersey-client:2.25" level="project" />
+    <orderEntry type="library" name="Gradle: org.glassfish.jersey.media:jersey-media-jaxb:2.25" level="project" />
+    <orderEntry type="library" name="Gradle: org.glassfish.hk2:hk2-utils:2.5.0-b30" level="project" />
+    <orderEntry type="library" name="Gradle: org.glassfish.hk2.external:aopalliance-repackaged:2.5.0-b30" level="project" />
+    <orderEntry type="library" name="Gradle: org.eclipse.jetty:jetty-server:9.3.9.v20160517" level="project" />
+    <orderEntry type="library" name="Gradle: javax.servlet:javax.servlet-api:3.1.0" level="project" />
+    <orderEntry type="library" name="Gradle: org.eclipse.jetty:jetty-continuation:9.3.9.v20160517" level="project" />
+    <orderEntry type="library" name="Gradle: org.eclipse.jetty:jetty-servlet:9.3.9.v20160517" level="project" />
+    <orderEntry type="library" name="Gradle: org.eclipse.jetty:jetty-http:9.3.9.v20160517" level="project" />
     <orderEntry type="library" name="Gradle: com.fasterxml.jackson.core:jackson-annotations:2.8.4" level="project" />
     <orderEntry type="library" name="Gradle: org.glassfish.jersey.containers:jersey-container-servlet-core:2.23.2" level="project" />
+    <orderEntry type="library" name="Gradle: org.eclipse.jetty:jetty-io:9.3.9.v20160517" level="project" />
     <orderEntry type="library" name="Gradle: com.fasterxml.jackson.core:jackson-databind:2.8.4" level="project" />
     <orderEntry type="library" name="Gradle: com.fasterxml.jackson.dataformat:jackson-dataformat-yaml:2.8.4" level="project" />
+    <orderEntry type="library" name="Gradle: org.javassist:javassist:3.20.0-GA" level="project" />
+    <orderEntry type="library" name="Gradle: org.eclipse.jetty:jetty-security:9.3.9.v20160517" level="project" />
     <orderEntry type="library" name="Gradle: com.fasterxml.jackson.core:jackson-core:2.8.4" level="project" />
   </component>
 </module>

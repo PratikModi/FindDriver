@@ -1,22 +1,27 @@
+
 server:
-  maxThreads: 5
-  applicationConnectors:
-   -type: http
-    port: 8080
-  adminConnectors:
-   -type: http
-    port: 8081
-  gzip:
-   enabled: true
-   bufferSize: 8KiB
+ applicationConnectors:
+  - type: http
+    port: 7995
+ adminConnectors:
+  - type: http
+    port: 7996
+ gzip:
+  enabled: true
+  bufferSize: 8KiB
 
 logging:
-   level: INFO
-   appernders:
-    -type: file
+ level: INFO
+ appenders:
+   - type: file
      currentLogFilename: ./logs/access.log
+     archivedLogFilenamePattern: ./logs/access-%d.log
+     archive: true
+     archivedFileCount: 5
+     threshold: ALL
+   - type: console
 
 swagger:
-  resourcePath: com.gojeck.resource
+  resourcePackage: com.gojek.resource
   description: "Where Is My Driver"
 

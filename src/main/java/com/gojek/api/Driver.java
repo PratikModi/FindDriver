@@ -1,4 +1,4 @@
-package com.gojeck.api;
+package com.gojek.api;
 
 import com.fasterxml.jackson.annotation.JsonProperty;
 

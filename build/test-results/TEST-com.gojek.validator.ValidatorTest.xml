@@ -1,0 +1,16 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<testsuite name="com.gojek.validator.ValidatorTest" tests="6" skipped="0" failures="0" errors="0" timestamp="2017-01-25T19:12:33" hostname="Pratik-PC" time="0.003">
+  <properties/>
+  <testcase name="isValidLatitudeTest" classname="com.gojek.validator.ValidatorTest" time="0.0"/>
+  <testcase name="validateWrongDriverTest" classname="com.gojek.validator.ValidatorTest" time="0.0"/>
+  <testcase name="validateTest" classname="com.gojek.validator.ValidatorTest" time="0.0"/>
+  <testcase name="validateWrongLongitudeTest" classname="com.gojek.validator.ValidatorTest" time="0.0"/>
+  <testcase name="validateWrongLatitudeTest" classname="com.gojek.validator.ValidatorTest" time="0.0"/>
+  <testcase name="isValidLongitudeTest" classname="com.gojek.validator.ValidatorTest" time="0.001"/>
+  <system-out><![CDATA[00:42:33.528 [Test worker] INFO com.gojek.validation.DriverValidator - Validating Driver:-Driver{id=1, latitude=91, longitude=90, distance=0.0}
+00:42:33.529 [Test worker] INFO com.gojek.validation.DriverValidator - Validating Driver:-Driver{id=1, latitude=90, longitude=90, distance=0.0}
+00:42:33.529 [Test worker] INFO com.gojek.validation.DriverValidator - Validating Driver:-Driver{id=1, latitude=90, longitude=190, distance=0.0}
+00:42:33.530 [Test worker] INFO com.gojek.validation.DriverValidator - Validating Driver:-Driver{id=1, latitude=91, longitude=90, distance=0.0}
+]]></system-out>
+  <system-err><![CDATA[]]></system-err>
+</testsuite>

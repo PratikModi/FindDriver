@@ -1,7 +1,7 @@
-package com.gojeck;
+package com.gojek;
 
-import com.gojeck.exception.RuntimeExceptionMapper;
-import com.gojeck.resource.DriverResource;
+import com.gojek.exception.RuntimeExceptionMapper;
+import com.gojek.resource.DriverResource;
 import com.google.inject.Guice;
 import com.google.inject.Injector;
 import com.google.inject.Module;

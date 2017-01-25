@@ -1,4 +1,4 @@
-package com.gojeck;
+package com.gojek;
 
 import com.fasterxml.jackson.annotation.JsonProperty;
 import io.dropwizard.Configuration;

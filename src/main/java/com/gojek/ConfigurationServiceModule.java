@@ -1,4 +1,4 @@
-package com.gojeck;
+package com.gojek;
 
 import com.google.inject.PrivateModule;
 

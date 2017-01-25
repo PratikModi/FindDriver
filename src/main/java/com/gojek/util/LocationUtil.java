@@ -1,4 +1,4 @@
-package com.gojeck.util;
+package com.gojek.util;
 
 import java.util.regex.Matcher;
 import java.util.regex.Pattern;

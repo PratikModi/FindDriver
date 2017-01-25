@@ -1,6 +1,6 @@
-package com.gojeck.exception;
+package com.gojek.exception;
 
-import com.gojeck.response.ApiResponse;
+import com.gojek.response.ApiResponse;
 import org.slf4j.Logger;
 import org.slf4j.LoggerFactory;
 

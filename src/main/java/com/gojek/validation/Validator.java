@@ -1,4 +1,4 @@
-package com.gojeck.validation;
+package com.gojek.validation;
 
 /**
  * Created by Pratik on 22-01-2017.

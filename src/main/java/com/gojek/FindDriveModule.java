@@ -1,11 +1,11 @@
-package com.gojeck;
+package com.gojek;
 
-import com.gojeck.api.Driver;
-import com.gojeck.model.DriverServiceImpl;
-import com.gojeck.resource.DriverResource;
-import com.gojeck.service.DriverService;
-import com.gojeck.validation.DriverValidator;
-import com.gojeck.validation.Validator;
+import com.gojek.api.Driver;
+import com.gojek.model.DriverServiceImpl;
+import com.gojek.resource.DriverResource;
+import com.gojek.service.DriverService;
+import com.gojek.validation.DriverValidator;
+import com.gojek.validation.Validator;
 import com.google.inject.Provides;
 import com.google.inject.Singleton;
 import io.dropwizard.setup.Environment;

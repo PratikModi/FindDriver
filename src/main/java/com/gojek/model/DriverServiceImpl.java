@@ -1,9 +1,9 @@
-package com.gojeck.model;
+package com.gojek.model;
 
-import com.gojeck.api.Location;
-import com.gojeck.api.Driver;
-import com.gojeck.service.DriverService;
-import com.gojeck.util.LocationUtil;
+import com.gojek.api.Location;
+import com.gojek.api.Driver;
+import com.gojek.service.DriverService;
+import com.gojek.util.LocationUtil;
 import com.google.inject.Inject;
 
 import java.util.*;
@@ -35,27 +35,27 @@ public class DriverServiceImpl implements DriverService {
     public NavigableSet<Driver> getDriversLocation(Location location) {
         final NavigableSet<Driver> driverList;
         String key = String.valueOf(location.getLatitude()) + "-" + String.valueOf(location.getLongitude());
-        //final double distance;
         driverList = driverLocations.get(key);
         if(driverList!=null && driverList.size()>0) {
-            driverList.parallelStream().forEach(driver -> {
+            Iterator<Driver> iterator = driverList.iterator();
+            while(iterator.hasNext()){
+                Driver driver = iterator.next();
                 final double distance = LocationUtil.getInstance().findDistance(location.getLatitude(),location.getLongitude(),driver.getLatitude(),driver.getLongitude());
                 if(distance>location.getRadius()){
-                    driverList.remove(driver);
+                    iterator.remove();
                 }else {
                     driver.setDistance(distance);
                 }
-                    }
-            );
-        }
-        if(driverList.size()>location.getLimit()){
-            return driverList.subSet(driverList.pollFirst(),true,driverList.toArray(new Driver[driverList.size()])[location.getLimit()],true);
+            }
+            if(driverList.size()>location.getLimit()){
+                return driverList.subSet(driverList.first(),true,driverList.toArray(new Driver[driverList.size()])[location.getLimit()-1],true);
+            }
         }
         return driverList;
     }
 
     @Override
-    public void saveDriverLocation(Driver driver) {
+    public void saveDriversLocation(Driver driver) {
         NavigableSet<Driver> driverList;
         String key = String.valueOf(driver.getLatitude()) + "-" + String.valueOf(driver.getLongitude());
         if(driverLocations.containsKey(key)){
@@ -66,6 +66,6 @@ public class DriverServiceImpl implements DriverService {
             driverList.add(driver);
         }
 
-        driverLocations.putIfAbsent(String.valueOf(driver.getLatitude()) + "-" + String.valueOf(driver.getLongitude()),driverList);
+        driverLocations.put(String.valueOf(driver.getLatitude()) + "-" + String.valueOf(driver.getLongitude()),driverList);
     }
 }

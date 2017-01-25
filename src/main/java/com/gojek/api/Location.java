@@ -1,4 +1,4 @@
-package com.gojeck.api;
+package com.gojek.api;
 
 import com.fasterxml.jackson.annotation.JsonProperty;
 
@@ -25,6 +25,9 @@ public class Location {
         this.longitude = longitude;
         this.radius = radius;
         this.limit = limit;
+    }
+
+    public Location() {
     }
 
     public Long getLatitude() {
