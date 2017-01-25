@@ -90,5 +90,4 @@ public class DriverResource {
         return Response.status(Response.Status.OK.getStatusCode()).entity(new ApiResponse(Response.Status.OK.getStatusCode(),"Driver Data Saved Successfully.")).type(MediaType.APPLICATION_JSON_TYPE).build();
     }
 
-
 }

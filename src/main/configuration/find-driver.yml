@@ -1,3 +1,4 @@
+<<<<<<< HEAD
 
 server:
  applicationConnectors:
@@ -25,3 +26,32 @@ swagger:
   resourcePackage: com.gojek.resource
   description: "Where Is My Driver"
 
+=======
+
+server:
+ applicationConnectors:
+  - type: http
+    port: 7995
+ adminConnectors:
+  - type: http
+    port: 7996
+ gzip:
+  enabled: true
+  bufferSize: 8KiB
+
+logging:
+ level: INFO
+ appenders:
+   - type: file
+     currentLogFilename: ./logs/access.log
+     archivedLogFilenamePattern: ./logs/access-%d.log
+     archive: true
+     archivedFileCount: 5
+     threshold: ALL
+   - type: console
+
+swagger:
+  resourcePackage: com.gojek.resource
+  description: "Where Is My Driver"
+
+>>>>>>> bbf589a8fe57f01c15c5c4ff97139118664cf27d

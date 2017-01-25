@@ -2,40 +2,8 @@
 <project version="4">
   <component name="ChangeListManager">
     <list default="true" id="6c011bb9-f6bb-442f-8bde-4df73d429f0b" name="Default" comment="[GoJeck] Find Driver Resource">
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/src/test/java/com/gojek/model/DriverServiceImplTest.java" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/src/test/java/com/gojek/validator/ValidatorTest.java" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/build/classes/main/com/gojeck/ConfigurationServiceModule.class" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/build/classes/main/com/gojeck/FindDriveModule.class" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/build/classes/main/com/gojeck/FindDriverApplication$1.class" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/build/classes/main/com/gojeck/FindDriverApplication.class" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/build/classes/main/com/gojeck/FindDriverConfiguration.class" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/build/classes/main/com/gojeck/model/Driver.class" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/build/classes/main/com/gojeck/resource/FindDriverResource.class" afterPath="" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/.gradle/2.13/taskArtifacts/cache.properties.lock" afterPath="$PROJECT_DIR$/.gradle/2.13/taskArtifacts/cache.properties.lock" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/.gradle/2.13/taskArtifacts/fileHashes.bin" afterPath="$PROJECT_DIR$/.gradle/2.13/taskArtifacts/fileHashes.bin" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/.gradle/2.13/taskArtifacts/fileSnapshots.bin" afterPath="$PROJECT_DIR$/.gradle/2.13/taskArtifacts/fileSnapshots.bin" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/.gradle/2.13/taskArtifacts/taskArtifacts.bin" afterPath="$PROJECT_DIR$/.gradle/2.13/taskArtifacts/taskArtifacts.bin" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/build/libs/FindDriver-1.0-SNAPSHOT.jar" afterPath="$PROJECT_DIR$/build/libs/FindDriver-1.0-SNAPSHOT.jar" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/.idea/modules/FindDriver_main.iml" afterPath="$PROJECT_DIR$/.idea/modules/FindDriver_main.iml" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/.idea/modules/FindDriver_test.iml" afterPath="$PROJECT_DIR$/.idea/modules/FindDriver_test.iml" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/.idea/workspace.xml" afterPath="$PROJECT_DIR$/.idea/workspace.xml" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/build.gradle" afterPath="$PROJECT_DIR$/build.gradle" />
       <change type="MODIFICATION" beforePath="$PROJECT_DIR$/src/main/configuration/find-driver.yml" afterPath="$PROJECT_DIR$/src/main/configuration/find-driver.yml" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/src/main/java/com/gojek/ConfigurationServiceModule.java" afterPath="$PROJECT_DIR$/src/main/java/com/gojek/ConfigurationServiceModule.java" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/src/main/java/com/gojek/FindDriveModule.java" afterPath="$PROJECT_DIR$/src/main/java/com/gojek/FindDriveModule.java" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/src/main/java/com/gojek/FindDriverApplication.java" afterPath="$PROJECT_DIR$/src/main/java/com/gojek/FindDriverApplication.java" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/src/main/java/com/gojek/FindDriverConfiguration.java" afterPath="$PROJECT_DIR$/src/main/java/com/gojek/FindDriverConfiguration.java" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/src/main/java/com/gojek/api/Driver.java" afterPath="$PROJECT_DIR$/src/main/java/com/gojek/api/Driver.java" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/src/main/java/com/gojek/api/Location.java" afterPath="$PROJECT_DIR$/src/main/java/com/gojek/api/Location.java" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/src/main/java/com/gojek/exception/RuntimeExceptionMapper.java" afterPath="$PROJECT_DIR$/src/main/java/com/gojek/exception/RuntimeExceptionMapper.java" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/src/main/java/com/gojek/model/DriverServiceImpl.java" afterPath="$PROJECT_DIR$/src/main/java/com/gojek/model/DriverServiceImpl.java" />
       <change type="MODIFICATION" beforePath="$PROJECT_DIR$/src/main/java/com/gojek/resource/DriverResource.java" afterPath="$PROJECT_DIR$/src/main/java/com/gojek/resource/DriverResource.java" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/src/main/java/com/gojek/response/ApiResponse.java" afterPath="$PROJECT_DIR$/src/main/java/com/gojek/response/ApiResponse.java" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/src/main/java/com/gojek/service/DriverService.java" afterPath="$PROJECT_DIR$/src/main/java/com/gojek/service/DriverService.java" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/src/main/java/com/gojek/util/LocationUtil.java" afterPath="$PROJECT_DIR$/src/main/java/com/gojek/util/LocationUtil.java" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/src/main/java/com/gojek/validation/DriverValidator.java" afterPath="$PROJECT_DIR$/src/main/java/com/gojek/validation/DriverValidator.java" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/src/main/java/com/gojek/validation/Validator.java" afterPath="$PROJECT_DIR$/src/main/java/com/gojek/validation/Validator.java" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/src/test/java/com/gojek/resource/DriverResourceTest.java" afterPath="$PROJECT_DIR$/src/test/java/com/gojek/resource/DriverResourceTest.java" />
     </list>
     <ignored path="FindDriver.iws" />
     <ignored path=".idea/workspace.xml" />
@@ -164,8 +132,8 @@
       <file leaf-file-name="DriverResource.java" pinned="false" current-in-tab="true">
         <entry file="file://$PROJECT_DIR$/src/main/java/com/gojek/resource/DriverResource.java">
           <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="663">
-              <caret line="39" column="0" selection-start-line="39" selection-start-column="0" selection-end-line="39" selection-end-column="0" />
+            <state relative-caret-position="696">
+              <caret line="91" column="0" selection-start-line="91" selection-start-column="0" selection-end-line="91" selection-end-column="0" />
               <folding>
                 <element signature="imports" expanded="true" />
               </folding>
@@ -176,8 +144,8 @@
       <file leaf-file-name="find-driver.yml" pinned="false" current-in-tab="false">
         <entry file="file://$PROJECT_DIR$/src/main/configuration/find-driver.yml">
           <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="204">
-              <caret line="24" column="29" selection-start-line="24" selection-start-column="29" selection-end-line="24" selection-end-column="29" />
+            <state relative-caret-position="221">
+              <caret line="25" column="29" selection-start-line="25" selection-start-column="29" selection-end-line="25" selection-end-column="29" />
               <folding />
             </state>
           </provider>
@@ -530,9 +498,9 @@
         <option value="$PROJECT_DIR$/src/test/java/com/gojek/validator/ValidatorTest.java" />
         <option value="$PROJECT_DIR$/src/main/java/com/gojek/validation/DriverValidator.java" />
         <option value="$PROJECT_DIR$/src/main/configuration/find-driver.yml" />
-        <option value="$PROJECT_DIR$/src/main/java/com/gojek/resource/DriverResource.java" />
         <option value="$PROJECT_DIR$/src/main/java/com/gojek/model/DriverServiceImpl.java" />
         <option value="$PROJECT_DIR$/build.gradle" />
+        <option value="$PROJECT_DIR$/src/main/java/com/gojek/resource/DriverResource.java" />
       </list>
     </option>
   </component>
@@ -1191,7 +1159,7 @@
   </component>
   <component name="ToolWindowManager">
     <frame x="-8" y="-8" width="1382" height="744" extended-state="6" />
-    <editor active="false" />
+    <editor active="true" />
     <layout>
       <window_info id="Palette" active="false" anchor="right" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.33" sideWeight="0.5" order="4" side_tool="false" content_ui="tabs" />
       <window_info id="TODO" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.33" sideWeight="0.5" order="6" side_tool="false" content_ui="tabs" />
@@ -1207,7 +1175,7 @@
       <window_info id="Terminal" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.33" sideWeight="0.5" order="9" side_tool="false" content_ui="tabs" />
       <window_info id="Capture Tool" active="false" anchor="left" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.33" sideWeight="0.5" order="2" side_tool="false" content_ui="tabs" />
       <window_info id="Designer" active="false" anchor="right" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.33" sideWeight="0.5" order="7" side_tool="false" content_ui="tabs" />
-      <window_info id="Project" active="true" anchor="left" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="true" show_stripe_button="true" weight="0.2700454" sideWeight="0.5" order="0" side_tool="false" content_ui="combo" />
+      <window_info id="Project" active="false" anchor="left" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="true" show_stripe_button="true" weight="0.2700454" sideWeight="0.5" order="0" side_tool="false" content_ui="combo" />
       <window_info id="Gradle" active="false" anchor="right" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="true" show_stripe_button="true" weight="0.16263238" sideWeight="0.47948718" order="8" side_tool="false" content_ui="tabs" />
       <window_info id="Structure" active="false" anchor="left" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.25" sideWeight="0.5" order="1" side_tool="false" content_ui="tabs" />
       <window_info id="Ant Build" active="false" anchor="right" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.25" sideWeight="0.5" order="2" side_tool="false" content_ui="tabs" />
@@ -1713,8 +1681,8 @@
     </entry>
     <entry file="file://$PROJECT_DIR$/src/main/configuration/find-driver.yml">
       <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="204">
-          <caret line="24" column="29" selection-start-line="24" selection-start-column="29" selection-end-line="24" selection-end-column="29" />
+        <state relative-caret-position="221">
+          <caret line="25" column="29" selection-start-line="25" selection-start-column="29" selection-end-line="25" selection-end-column="29" />
           <folding />
         </state>
       </provider>
@@ -1771,8 +1739,8 @@
     </entry>
     <entry file="file://$PROJECT_DIR$/src/main/java/com/gojek/resource/DriverResource.java">
       <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="663">
-          <caret line="39" column="0" selection-start-line="39" selection-start-column="0" selection-end-line="39" selection-end-column="0" />
+        <state relative-caret-position="696">
+          <caret line="91" column="0" selection-start-line="91" selection-start-column="0" selection-end-line="91" selection-end-column="0" />
           <folding>
             <element signature="imports" expanded="true" />
           </folding>
