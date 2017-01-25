@@ -1,11 +1,11 @@
-package com.gojeck.resource;
+package com.gojek.resource;
 
 import com.codahale.metrics.annotation.Timed;
-import com.gojeck.api.Driver;
-import com.gojeck.api.Location;
-import com.gojeck.response.ApiResponse;
-import com.gojeck.service.DriverService;
-import com.gojeck.validation.Validator;
+import com.gojek.api.Driver;
+import com.gojek.api.Location;
+import com.gojek.response.ApiResponse;
+import com.gojek.service.DriverService;
+import com.gojek.validation.Validator;
 import com.google.inject.Inject;
 import io.swagger.annotations.Api;
 import io.swagger.annotations.ApiOperation;
@@ -21,7 +21,6 @@ import java.util.Set;
 /**
  * Created by Pratik on 21-01-2017.
  */
-
 @Path("/drivers")
 @Api(value = "Where Is My Driver?")
 @Produces(MediaType.APPLICATION_JSON)
@@ -46,11 +45,11 @@ public class DriverResource {
            @ApiParam(required = true, value = "latitude")
            @QueryParam("latitude") final long latitude,
            @ApiParam(required = true, value = "longitude")
-           @QueryParam("latitude") final long longitude,
-           @ApiParam(required = true, value = "radius")
-           @QueryParam("latitude") int radius,
-           @ApiParam(required = true, value = "limit")
-           @QueryParam("latitude") int limit
+           @QueryParam("longitude") final long longitude,
+           @ApiParam(value = "radius")
+           @QueryParam("radius") int radius,
+           @ApiParam(value = "limit")
+           @QueryParam("limit") int limit
 
     ) {
         log.info("finding driver for latitude:"+latitude+"&& longitude:"+longitude);
@@ -59,12 +58,15 @@ public class DriverResource {
         if(!validator.isValidLatitude(latitude) || !validator.isValidLongitude(longitude)){
             throw new RuntimeException(validator.getValidationMessage());
         }
+        Set<Driver> driversNearBy=driverService.getDriversLocation(new Location(latitude,longitude,radius,limit));
+        if(driversNearBy==null || driversNearBy.size()==0){
+            return Response.status(Response.Status.NOT_FOUND.getStatusCode()).entity(new ApiResponse(Response.Status.NOT_FOUND.getStatusCode(),"Driver Not Found")).type(MediaType.APPLICATION_JSON_TYPE).build();
+        }
 
-        Set<Driver> diversNearBy=driverService.getDriversLocation(new Location(latitude,longitude,radius,limit));
-        return Response.ok().entity(diversNearBy).type(MediaType.APPLICATION_JSON_TYPE).build();
+        return Response.ok().entity(driversNearBy).type(MediaType.APPLICATION_JSON_TYPE).build();
     }
 
-    @Path("{id}/location")
+    @Path("/{id}/location")
     @PUT
     @Timed
     @ApiOperation(tags = {"driver"}, value = "Save the driver location")
@@ -76,14 +78,14 @@ public class DriverResource {
     ) {
         log.info("saving driver location with latitude:"+location.getLatitude()+"&& longitude:"+location.getLongitude());
         if(id<1 || id>50000){
-            return Response.status(Response.Status.OK.getStatusCode()).entity(new ApiResponse(Response.Status.NOT_FOUND.getStatusCode(),"Driver Not Found.")).type(MediaType.APPLICATION_JSON_TYPE).build();
+            return Response.status(Response.Status.NOT_FOUND.getStatusCode()).entity(new ApiResponse(Response.Status.NOT_FOUND.getStatusCode(),"Driver Not Found.")).type(MediaType.APPLICATION_JSON_TYPE).build();
         }
         Driver driver = new Driver(id,location.getLatitude(),location.getLongitude());
         if(!validator.validate(driver)){
             log.info("Validation Message:-"+validator.getValidationMessage());
             throw new RuntimeException(validator.getValidationMessage());
         }
-        driverService.saveDriverLocation(driver);
+        driverService.saveDriversLocation(driver);
 
         return Response.status(Response.Status.OK.getStatusCode()).entity(new ApiResponse(Response.Status.OK.getStatusCode(),"Driver Data Saved Successfully.")).type(MediaType.APPLICATION_JSON_TYPE).build();
     }
