@@ -19,3 +19,8 @@ logging:
      archivedFileCount: 5
      threshold: ALL
    - type: console
+
+swagger:
+   resourcePackage: com.gojek.resource
+   description: Where Is My Driver?
+

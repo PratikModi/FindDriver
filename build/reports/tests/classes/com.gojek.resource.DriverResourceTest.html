@@ -41,7 +41,7 @@
 </td>
 <td>
 <div class="infoBox" id="duration">
-<div class="counter">2.171s</div>
+<div class="counter">0.480s</div>
 <p>duration</p>
 </div>
 </td>
@@ -79,7 +79,7 @@
 </thead>
 <tr>
 <td class="success">getDriversLocationInvalidLatitudeTest</td>
-<td>0s</td>
+<td>0.002s</td>
 <td class="success">passed</td>
 </tr>
 <tr>
@@ -89,7 +89,7 @@
 </tr>
 <tr>
 <td class="success">getDriversLocationNoDriverFoundTest</td>
-<td>0.001s</td>
+<td>0.003s</td>
 <td class="success">passed</td>
 </tr>
 <tr>
@@ -99,17 +99,17 @@
 </tr>
 <tr>
 <td class="success">saveDriversLocationInvalidIdTest</td>
-<td>2.151s</td>
+<td>0.435s</td>
 <td class="success">passed</td>
 </tr>
 <tr>
 <td class="success">saveDriversLocationInvalidLatitudeTest</td>
-<td>0s</td>
+<td>0.002s</td>
 <td class="success">passed</td>
 </tr>
 <tr>
 <td class="success">saveDriversLocationInvalidLongitudeTest</td>
-<td>0.015s</td>
+<td>0.034s</td>
 <td class="success">passed</td>
 </tr>
 <tr>
@@ -122,23 +122,23 @@
 <div id="tab1" class="tab">
 <h2>Standard output</h2>
 <span class="code">
-<pre>14:30:22.696 [Test worker] INFO com.gojek.resource.DriverResource - saving driver location with latitude:90&amp;&amp; longitude:190
-14:30:22.707 [Test worker] INFO com.gojek.validation.DriverValidator - Validating Driver:-Driver{id=3, latitude=90, longitude=190, distance=0.0}
-14:30:22.708 [Test worker] INFO com.gojek.resource.DriverResource - Validation Message:-Longitude should be between +/- 180
-14:30:22.709 [Test worker] INFO com.gojek.resource.DriverResource - saving driver location with latitude:91&amp;&amp; longitude:10
-14:30:22.709 [Test worker] INFO com.gojek.validation.DriverValidator - Validating Driver:-Driver{id=2, latitude=91, longitude=10, distance=0.0}
-14:30:22.709 [Test worker] INFO com.gojek.resource.DriverResource - Validation Message:-Latitude should be between +/- 90
-14:30:22.710 [Test worker] INFO com.gojek.resource.DriverResource - finding driver for latitude:91&amp;&amp; longitude:11
-14:30:22.711 [Test worker] INFO com.gojek.resource.DriverResource - saving driver location with latitude:20&amp;&amp; longitude:10
-14:30:24.863 [Test worker] INFO com.gojek.resource.DriverResource - saving driver location with latitude:20&amp;&amp; longitude:10
-14:30:24.863 [Test worker] INFO com.gojek.validation.DriverValidator - Validating Driver:-Driver{id=1, latitude=20, longitude=10, distance=0.0}
-14:30:24.864 [Test worker] INFO com.gojek.resource.DriverResource - finding driver for latitude:90&amp;&amp; longitude:181
-14:30:24.865 [Test worker] INFO com.gojek.resource.DriverResource - saving driver location with latitude:20&amp;&amp; longitude:10
-14:30:24.865 [Test worker] INFO com.gojek.validation.DriverValidator - Validating Driver:-Driver{id=1, latitude=20, longitude=10, distance=0.0}
-14:30:24.866 [Test worker] INFO com.gojek.resource.DriverResource - finding driver for latitude:20&amp;&amp; longitude:11
-14:30:24.866 [Test worker] INFO com.gojek.resource.DriverResource - saving driver location with latitude:20&amp;&amp; longitude:10
-14:30:24.866 [Test worker] INFO com.gojek.validation.DriverValidator - Validating Driver:-Driver{id=1, latitude=20, longitude=10, distance=0.0}
-14:30:24.867 [Test worker] INFO com.gojek.resource.DriverResource - finding driver for latitude:20&amp;&amp; longitude:10
+<pre>15:05:49.943 [Test worker] INFO com.gojek.resource.DriverResource - saving driver location with latitude:90&amp;&amp; longitude:190
+15:05:49.966 [Test worker] INFO com.gojek.validation.DriverValidator - Validating Driver:-Driver{id=3, latitude=90, longitude=190, distance=0.0}
+15:05:49.968 [Test worker] INFO com.gojek.resource.DriverResource - Validation Message:-Longitude should be between +/- 180
+15:05:49.971 [Test worker] INFO com.gojek.resource.DriverResource - saving driver location with latitude:91&amp;&amp; longitude:10
+15:05:49.971 [Test worker] INFO com.gojek.validation.DriverValidator - Validating Driver:-Driver{id=2, latitude=91, longitude=10, distance=0.0}
+15:05:49.972 [Test worker] INFO com.gojek.resource.DriverResource - Validation Message:-Latitude should be between +/- 90
+15:05:49.976 [Test worker] INFO com.gojek.resource.DriverResource - finding driver for latitude:91&amp;&amp; longitude:11
+15:05:49.980 [Test worker] INFO com.gojek.resource.DriverResource - saving driver location with latitude:20&amp;&amp; longitude:10
+15:05:50.416 [Test worker] INFO com.gojek.resource.DriverResource - saving driver location with latitude:20&amp;&amp; longitude:10
+15:05:50.416 [Test worker] INFO com.gojek.validation.DriverValidator - Validating Driver:-Driver{id=1, latitude=20, longitude=10, distance=0.0}
+15:05:50.418 [Test worker] INFO com.gojek.resource.DriverResource - finding driver for latitude:90&amp;&amp; longitude:181
+15:05:50.419 [Test worker] INFO com.gojek.resource.DriverResource - saving driver location with latitude:20&amp;&amp; longitude:10
+15:05:50.420 [Test worker] INFO com.gojek.validation.DriverValidator - Validating Driver:-Driver{id=1, latitude=20, longitude=10, distance=0.0}
+15:05:50.421 [Test worker] INFO com.gojek.resource.DriverResource - finding driver for latitude:20&amp;&amp; longitude:11
+15:05:50.422 [Test worker] INFO com.gojek.resource.DriverResource - saving driver location with latitude:20&amp;&amp; longitude:10
+15:05:50.422 [Test worker] INFO com.gojek.validation.DriverValidator - Validating Driver:-Driver{id=1, latitude=20, longitude=10, distance=0.0}
+15:05:50.423 [Test worker] INFO com.gojek.resource.DriverResource - finding driver for latitude:20&amp;&amp; longitude:10
 </pre>
 </span>
 </div>
@@ -150,7 +150,7 @@
 <input id="line-wrapping-toggle" type="checkbox" autocomplete="off"/>
 </label>
 </div>Generated by 
-<a href="http://www.gradle.org">Gradle 2.13</a> at 26 Jan, 2017 2:30:25 PM</p>
+<a href="http://www.gradle.org">Gradle 2.13</a> at 26 Jan, 2017 3:05:51 PM</p>
 </div>
 </div>
 </body>

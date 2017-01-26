@@ -1,0 +1,47 @@
+INFO  [2017-01-26 09:27:24,163] org.eclipse.jetty.util.log: Logging initialized @17635ms
+INFO  [2017-01-26 09:27:24,173] org.eclipse.jetty.util.log: Logging initialized @9010ms
+INFO  [2017-01-26 09:27:30,197] io.dropwizard.server.DefaultServerFactory: Registering jersey handler with root path prefix: /
+INFO  [2017-01-26 09:27:30,198] io.dropwizard.server.DefaultServerFactory: Registering admin handler with root path prefix: /
+INFO  [2017-01-26 09:27:30,200] io.dropwizard.server.DefaultServerFactory: Registering jersey handler with root path prefix: /
+INFO  [2017-01-26 09:27:30,202] io.dropwizard.server.DefaultServerFactory: Registering admin handler with root path prefix: /
+INFO  [2017-01-26 09:29:02,962] org.eclipse.jetty.util.log: Logging initialized @6498ms
+INFO  [2017-01-26 09:29:03,105] io.dropwizard.server.DefaultServerFactory: Registering jersey handler with root path prefix: /
+INFO  [2017-01-26 09:29:03,106] io.dropwizard.server.DefaultServerFactory: Registering admin handler with root path prefix: /
+INFO  [2017-01-26 09:33:09,864] org.eclipse.jetty.util.log: Logging initialized @3212ms
+INFO  [2017-01-26 09:33:09,996] io.dropwizard.server.DefaultServerFactory: Registering jersey handler with root path prefix: /
+INFO  [2017-01-26 09:33:09,996] io.dropwizard.server.DefaultServerFactory: Registering admin handler with root path prefix: /
+INFO  [2017-01-26 09:33:10,004] io.dropwizard.assets.AssetsBundle: Registering AssetBundle with name: swagger-assets for path /swagger-static/*
+INFO  [2017-01-26 09:33:10,660] org.reflections.Reflections: Reflections took 502 ms to scan 1 urls, producing 28 keys and 28 values 
+INFO  [2017-01-26 09:33:11,457] io.dropwizard.server.DefaultServerFactory: Registering jersey handler with root path prefix: /
+INFO  [2017-01-26 09:33:11,457] io.dropwizard.server.DefaultServerFactory: Registering admin handler with root path prefix: /
+INFO  [2017-01-26 09:33:11,474] io.dropwizard.server.ServerFactory: Starting Where Is My Driver
+INFO  [2017-01-26 09:33:11,961] org.eclipse.jetty.setuid.SetUIDListener: Opened application@15835fa{HTTP/1.1,[http/1.1]}{0.0.0.0:7995}
+INFO  [2017-01-26 09:33:11,961] org.eclipse.jetty.setuid.SetUIDListener: Opened admin@f71edb{HTTP/1.1,[http/1.1]}{0.0.0.0:7996}
+INFO  [2017-01-26 09:33:11,977] org.eclipse.jetty.server.Server: jetty-9.3.9.v20160517
+INFO  [2017-01-26 09:33:14,220] io.dropwizard.jersey.DropwizardResourceConfig: The following paths were found for the configured resources:
+
+    GET     /drivers (com.gojek.resource.DriverResource)
+    PUT     /drivers/{id}/location (com.gojek.resource.DriverResource)
+    GET     /swagger (io.federecio.dropwizard.swagger.SwaggerResource)
+    GET     /swagger.{type:json|yaml} (io.swagger.jaxrs.listing.ApiListingResource)
+
+INFO  [2017-01-26 09:33:14,222] org.eclipse.jetty.server.handler.ContextHandler: Started i.d.j.MutableServletContextHandler@f55704{/,null,AVAILABLE}
+INFO  [2017-01-26 09:33:14,238] io.dropwizard.setup.AdminEnvironment: tasks = 
+
+    POST    /tasks/log-level (io.dropwizard.servlets.tasks.LogConfigurationTask)
+    POST    /tasks/gc (io.dropwizard.servlets.tasks.GarbageCollectionTask)
+
+WARN  [2017-01-26 09:33:14,239] io.dropwizard.setup.AdminEnvironment: 
+!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!
+!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!
+!    THIS APPLICATION HAS NO HEALTHCHECKS. THIS MEANS YOU WILL NEVER KNOW      !
+!     IF IT DIES IN PRODUCTION, WHICH MEANS YOU WILL NEVER KNOW IF YOU'RE      !
+!    LETTING YOUR USERS DOWN. YOU SHOULD ADD A HEALTHCHECK FOR EACH OF YOUR    !
+!         APPLICATION'S DEPENDENCIES WHICH FULLY (BUT LIGHTLY) TESTS IT.       !
+!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!
+!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!
+INFO  [2017-01-26 09:33:14,245] org.eclipse.jetty.server.handler.ContextHandler: Started i.d.j.MutableServletContextHandler@117850d{/,null,AVAILABLE}
+INFO  [2017-01-26 09:33:14,302] org.eclipse.jetty.server.AbstractConnector: Started application@15835fa{HTTP/1.1,[http/1.1]}{0.0.0.0:7995}
+INFO  [2017-01-26 09:33:14,306] org.eclipse.jetty.server.AbstractConnector: Started admin@f71edb{HTTP/1.1,[http/1.1]}{0.0.0.0:7996}
+INFO  [2017-01-26 09:33:14,306] org.eclipse.jetty.server.Server: Started @7656ms
+INFO  [2017-01-26 09:33:31,386] org.reflections.Reflections: Reflections took 8 ms to scan 1 urls, producing 28 keys and 28 values 
