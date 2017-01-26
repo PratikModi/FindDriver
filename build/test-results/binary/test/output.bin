@@ -1,22 +1,0 @@
-}14:19:47.406 [Test worker] INFO com.gojek.resource.DriverResource - saving driver location with latitude:90&& longitude:190
-’14:19:47.410 [Test worker] INFO com.gojek.validation.DriverValidator - Validating Driver:-Driver{id=3, latitude=90, longitude=190, distance=0.0}
-}14:19:47.411 [Test worker] INFO com.gojek.resource.DriverResource - Validation Message:-Longitude should be between +/- 180
-|14:19:47.412 [Test worker] INFO com.gojek.resource.DriverResource - saving driver location with latitude:91&& longitude:10
-‘14:19:47.412 [Test worker] INFO com.gojek.validation.DriverValidator - Validating Driver:-Driver{id=2, latitude=91, longitude=10, distance=0.0}
-{14:19:47.412 [Test worker] INFO com.gojek.resource.DriverResource - Validation Message:-Latitude should be between +/- 90
-s14:19:47.413 [Test worker] INFO com.gojek.resource.DriverResource - finding driver for latitude:91&& longitude:11
-|14:19:47.414 [Test worker] INFO com.gojek.resource.DriverResource - saving driver location with latitude:20&& longitude:10
-	|14:19:47.768 [Test worker] INFO com.gojek.resource.DriverResource - saving driver location with latitude:20&& longitude:10
-	‘14:19:47.768 [Test worker] INFO com.gojek.validation.DriverValidator - Validating Driver:-Driver{id=1, latitude=20, longitude=10, distance=0.0}
-
-t14:19:47.769 [Test worker] INFO com.gojek.resource.DriverResource - finding driver for latitude:90&& longitude:181
-|14:19:47.771 [Test worker] INFO com.gojek.resource.DriverResource - saving driver location with latitude:20&& longitude:10
-‘14:19:47.771 [Test worker] INFO com.gojek.validation.DriverValidator - Validating Driver:-Driver{id=1, latitude=20, longitude=10, distance=0.0}
-s14:19:47.773 [Test worker] INFO com.gojek.resource.DriverResource - finding driver for latitude:20&& longitude:11
-|14:19:47.774 [Test worker] INFO com.gojek.resource.DriverResource - saving driver location with latitude:20&& longitude:10
-‘14:19:47.774 [Test worker] INFO com.gojek.validation.DriverValidator - Validating Driver:-Driver{id=1, latitude=20, longitude=10, distance=0.0}
-s14:19:47.774 [Test worker] INFO com.gojek.resource.DriverResource - finding driver for latitude:20&& longitude:10
-‘14:19:47.778 [Test worker] INFO com.gojek.validation.DriverValidator - Validating Driver:-Driver{id=1, latitude=91, longitude=90, distance=0.0}
-‘14:19:47.779 [Test worker] INFO com.gojek.validation.DriverValidator - Validating Driver:-Driver{id=1, latitude=90, longitude=90, distance=0.0}
-’14:19:47.782 [Test worker] INFO com.gojek.validation.DriverValidator - Validating Driver:-Driver{id=1, latitude=90, longitude=190, distance=0.0}
-‘14:19:47.783 [Test worker] INFO com.gojek.validation.DriverValidator - Validating Driver:-Driver{id=1, latitude=91, longitude=90, distance=0.0}

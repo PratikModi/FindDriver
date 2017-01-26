@@ -1,8 +1,0 @@
-<?xml version="1.0" encoding="UTF-8"?>
-<testsuite name="com.gojek.model.DriverServiceImplTest" tests="2" skipped="0" failures="0" errors="0" timestamp="2017-01-26T08:49:47" hostname="Pratik-PC" time="0.032">
-  <properties/>
-  <testcase name="saveDriversLocationTest" classname="com.gojek.model.DriverServiceImplTest" time="0.004"/>
-  <testcase name="getDriversLocationTest" classname="com.gojek.model.DriverServiceImplTest" time="0.028"/>
-  <system-out><![CDATA[]]></system-out>
-  <system-err><![CDATA[]]></system-err>
-</testsuite>
