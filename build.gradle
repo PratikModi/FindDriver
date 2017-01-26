@@ -1,5 +1,5 @@
 group 'Go-Jeck'
-version '1.0-SNAPSHOT'
+version '1.0'
 
 apply plugin: 'java'
 apply(plugin: "application");
@@ -11,6 +11,9 @@ mainClassName = "com.gojek.FindDriverApplication"
 
 project.ext{
     dropwizardVersion='1.0.5'
+    jarLocation= 'E://jar//'
+    configLocation= 'E://config//'
+
 }
 
 buildscript {
@@ -50,6 +53,40 @@ shadowJar.dependsOn 'test'
 test.dependsOn 'cleanTest'
 
 shadowJar {
-    configurations = [project.configurations.compile]
+
+    mergeServiceFiles();
+
+    from sourceSets.main.output.classesDir
+
     archiveName = rootProject.name.toLowerCase()+".jar"
+
+    manifest{
+        attributes "Implementation-Title": "FindDriver"
+        attributes "Implementation-Version": rootProject.version
+        attributes "Main-Class": mainClassName
+        attributes "Built-Date": new Date()
+        attributes "Built-By": System.getProperty('user.name')
+        attributes "Build-Jdk": System.getProperty('java.version')
+    }
 }
+
+artifacts{
+    archives shadowJar
+}
+
+tasks['shadowJar'].finalizedBy 'copyArtifacts'
+
+jar.enabled = false
+
+task('copyArtifacts')<< {
+    copy {
+        from 'build/libs/' + rootProject.name.toLowerCase() + ".jar"
+        into jarLocation
+    }
+    copy{
+        from 'src/main/configuration/find-driver.yml'
+        into configLocation
+    }
+}
+
+
